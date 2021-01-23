@@ -3,6 +3,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import Todos from "./Todos";
 import AddTodo from "./AddTodo";
 import Test from "./HOC/Test";
+import Posts from "./Posts";
 
 class App extends Component {
   state = {
@@ -32,6 +33,7 @@ class App extends Component {
         <Todos todos={this.state.todos} handleDelete={this.handleDelete} />
         <AddTodo handleAdd={this.handleAdd} />
         <Test text="yooo" />
+        <Posts />
       </div>
     );
   }
